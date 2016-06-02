@@ -1,0 +1,190 @@
+.title {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #FFFFFF;
+    color: #659800;
+    font-weight: bold;
+    font-size: 25px;
+}
+.first-title, .second-title, .third-title, .fourth-title, .last-title {
+    display: inline-block;
+    width: 102.4%;
+    height: 60px;
+    background-color: #4C4C4C;
+}
+.first-logo {
+    display: inline-block;
+    height: 80%;
+    width: 20%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.second-title {
+    height: 480px;
+    border: solid 1px black;
+    background-color: #FFFFFF;
+}
+.third-title {
+    width: 100%;
+    height: 480px;
+    background-color: #FFFFFF;
+    z-index: -1;
+}
+.fourth-title {
+    width: 1200px;
+    height: 150px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    /*border: solid 1px black;*/
+}
+.last-title {
+    height: 80px;
+    margin-top: 370px;
+    background-color: #E3F5FC;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#IMG {
+    width: 1340px;
+}
+#myCarousel {
+    float: left;
+    height: 50px;
+}
+.Search {
+    position: absolute;
+    display: inline-block;
+    margin-left: 20px;
+    top: 15px;
+}
+.Input1 {
+    top: -20px;
+    width: 250px;
+    height: 30px;
+}
+.btn1, .btn11 {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn11 {
+    padding: 6px 0px;
+    margin-left: 20px;
+    width: 150px;
+}
+.button-user {
+    float: right;
+    margin-top: 15px;
+    margin-right: 80px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.button-login {
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    background-color: #E2373A;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.button-register {
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    background-color: #4C4C4C;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.button-books, .button-movies, .button-music {
+    float: right;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #4C4C4C;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+#change1 {
+    width: 270px;
+    height: 150px;
+    margin-right: 22px;
+    border: solid 1px black;
+}
+#change1-1, #change1-2, #change1-3, #change1-4 {
+    width: 270px;
+    height: 150px;
+    margin-right: 22px;
+    /*border: solid 1px black;*/
+}
+#change2-1, #change2-2, #change2-3, #change2-4, #change6-1, #change6-2, #change6-3, #change6-4 {
+    position: absolute;
+    display: none;
+    top: 750px;
+    width: 270px;
+    height: 160px;
+    margin-right: 22px;
+    /*border: solid 1px black;*/
+    cursor: pointer;
+}
+#change6-1, #change6-2, #change6-3, #change6-4 {
+    top: 910px;
+}
+#change2-2, #change6-2 {
+    margin-left: 292px;
+}
+#change2-3, #change6-3 {
+    margin-left: 584px;
+}
+#change2-4, #change6-4 {
+    margin-left: 876px;
+}
+.change3 {
+    display: block;
+    left: -15px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+#change4-1, #change4-2 {
+    width: 268px;
+    height: 89px;
+    font-size: 13px;
+    font-weight: bold;
+    word-break: break-all;
+    color: black;
+    background-color: #FFFFFF;
+}
+#change4-2 {
+    background-color: #F1F9F6;
+}
+#change5-1, #change5-2, #change5-3, #change5-4 {
+    width: 270px;
+    height: 150px;
+    margin-right: 22px;
+    margin-top: 10px;
+    /*border: solid 1px black;*/
+}

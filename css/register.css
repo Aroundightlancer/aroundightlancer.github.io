@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+.title h1 {
+	width: 800px;
+	margin: 50px 0 50px 210px;
+	font-size: 36px;
+	font-weight: normal;
+}
+.title,.body {
+	width: 800px;
+	margin: 0 auto;
+}
+.row1,.row2,.row3,.row5,.row6,.row7 {
+	margin: 20px 0;
+}
+.hd {
+	float: left;
+	width:150px;
+	padding-top: 10px;
+	text-align: right;
+}
+.bd {
+	width: 330px;
+	height: 40px;
+	padding-left: 5px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+.row4 {
+	padding-left: 150px;
+	margin: -10px 0 10px 0;
+}
+.level {
+	width: 150px;
+	height: 10px;
+	margin-top: 10px;
+	background-color: #CCC;
+}
+.codeInput {
+	float: left;
+	width: 80px;
+	height: 40px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+a {
+	text-decoration:none;
+	color: #666;
+}
+#imgCode {
+	margin: 0 10px 0 15px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+.change {
+	padding: 0 0 10px 0;
+}
+.button {
+	width: 332px;
+    height: 40px;
+    text-align: center;
+    background: #839b1b;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #FFF;
+    margin: 0px 0px 0px 150px;
+}

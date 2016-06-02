@@ -1,0 +1,210 @@
+.first-title, .last-title, .second-title, .third-title, .fourth-title, .fifth-title, .Sixth-title {
+    display: inline-block;
+    width: 102.4%;
+    height: 60px;
+    background-color: #4C4C4C;
+}
+.second-title {
+    margin-top: -490px;
+    height: 40px;
+    background-color: #EEEEEE;
+}
+.third-title {
+    position: absolute;
+    display: none;
+    top: 100px;
+    height: 40px;
+    /*border: solid 1px black;*/
+    background-color: rgba(255,255,255,1.0);
+    z-index: 0;
+}
+.fourth-title {
+    height: 450px;
+    background-color: #FFFFFF;
+    z-index: -1;
+}
+#forth-title {
+    display: inline-block;
+    width: 1346px;
+    margin-top: 40px;
+    height: 450px;
+    background-color: #FFFFFF;
+    /*border: solid 1px black;*/
+}
+.fifth-title {
+    margin-top: 10px;
+    height: 40px;
+    background-color: #FFFFFF;
+}
+.Sixth-title {
+    margin-left: -15px;
+    height: 400px;
+    background-color: #FFFFFF;
+}
+#Left, #Left1, #Right {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+#Left {
+    font-size: 22px;
+    font-weight: bold;
+}
+#Right {
+    float: right;
+    left: -30px;
+}
+#myCarousel {
+    float: left;
+    height: 50px;
+}
+.last-title {
+    height: 80px;
+    background-color: #E3F5FC;
+}
+.first-logo {
+    display: inline-block;
+    height: 80%;
+    width: 25%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#IMG {
+    width: 80%;
+}
+.Search {
+    position: absolute;
+    display: inline-block;
+    margin-left: 20px;
+    top: 15px;
+}
+.Input1 {
+    top: -20px;
+    width: 250px;
+    height: 30px;
+}
+.btn1 {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.button-user {
+    float: right;
+    margin-top: 15px;
+    margin-right: 80px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.button-login {
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    background-color: #E2373A;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.button-register {
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    background-color: #4C4C4C;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.button-books, .button-movies, .button-music {
+    float: right;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #4C4C4C;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.change, .change1 {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    /*border: solid 1px black;*/
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.change1 {
+    color: #3088CF;
+}
+.change3 {
+    display: block;
+    left: -15px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+#change4, #change6-1, #change6-2 {
+    width: 380px;
+    height: 380px;
+    margin-right: 27px;
+}
+.change5 {
+    width: 100%;
+    height: 25px;
+    margin-left: -20px;
+}
+#change6-1, #change6-2 {
+    width: 185px;
+    height: 185px;
+}
+#change6-2 {
+    margin-top: 10px;
+}
+#id0, #id1, #id2, #id3, #id4, #id5, #id6, #id7, #id8, #id9, #id10, #id11 {
+    display: none;
+    margin-left: 90px;
+    font-size: 14px;
+    z-index: -1;
+}
+.IIMG, .IIMG1 {
+    width: 110%;
+    height: 320px;
+    margin-left: -20px;
+}
+.IIMG1 {
+    width: 120%;
+    height: 125px;
+    margin-left: -15px;
+}
+#LWord {
+    float: left;
+    width: 170px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+}

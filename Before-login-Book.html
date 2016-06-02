@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>在线书籍音像阅览系统</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/Book.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css">
+        <link rel = "stylesheet" type = "text/css" href = "font-awesome-4.5.0/css/font-awesome.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/one-debug.css"/>
+
+        <script type = "text/javascript" src = "js/jquery-2.0.2.min.js"></script>
+    </head>
+    <body>
+        <!--最上面的小Logo和登录/注册按钮-->
+        <div class = "container-fluid">
+            <div class = "row first-title">
+                <div class = "first-logo">
+                    <img src = "logo.png">
+                </div>
+                <div class = "Search">
+                   <input results = "s" type="search" class="Input1" placeholder="请输入要搜索的内容"/>
+                    <button type = "button" class = "btn button-search">搜索</button><!--btn3000-->
+                </div>
+                <a href="register.html"><button type = "button" class = "btn1 button-register">注册</button></a>
+                <a href="Login.html"><button type = "button" class = "btn1 button-login">登录</button></a>
+                <a href = "Before-login-Music.html"></a><button type = "button" class = "btn1 button-music">音乐</button>
+                <a href="Before-login-Video.html"><button type = "button" class = "btn1 button-movies">影视</button></a>
+                <a href = "Before-login-Book.html"><button type = "button" class = "btn1 button-books">书刊</button></a>
+                <a href = "Before-login-index.html"><button type = "button" class = "btn1 button-books">首页</button></a>
+            </div>
+            <div class = "row second-title">
+                <img src = "img/book/Big.png">
+            </div>   
+        </div>
+        <div class = "container">
+            <div class = "col-xs-2 change">
+                <!--下拉菜单-->
+                <div class="row">
+                    <div class="dropdown">
+                        <a id="dLabel" role="button" data-toggle="dropdown" class="btn11 btn-primary" data-target="#" href="#">
+                            全部分类<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu"><!--3583,3585-->
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">教育</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">初等教育</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">中等教育</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">高等教育</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">家庭教育</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">特殊教育</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">教育事业</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">哲学</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">心理学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">哲学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">逻辑学</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">自然科学</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">生物科学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">环境科学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">农业科学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">自然科学总论</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">文学</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">世界文学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">中国文学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">文学总论</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">传记</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">文学理论</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">文化艺术</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">艺术</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">各国文化</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">文化理论</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">体育</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">风俗习惯</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">数理化</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">化学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">物理学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">数学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">力学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">晶体学</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">工业技术</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">矿业工程</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">武器工业</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">化工工业</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">航空航天工业</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">水利工程</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">自动化技术</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">社会科学</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">统计学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">社会学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">人类学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">人口学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">民族学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">政治</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown" tabindex="-1" href="#">医学</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">基础医学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">儿科学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">肿瘤学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">眼科学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">耳鼻咽喉科学</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">药学</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--图书区-->
+            <div class = "col-xs-9 change1">
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book1.png" id = "Img1">
+                    <span class = "word">魔尊</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book2.png" id = "Img1">
+                    <span class = "word">神墓</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book3.png" id = "Img1">
+                    <span class = "word">欢乐颂</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book4.png" id = "Img1">
+                    <span class = "word">时光会记得</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book5.png" id = "Img1">
+                    <span class = "word">三国演义</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book6.png" id = "Img1">
+                    <span class = "word">孩子应该这样爱</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book7.png" id = "Img1">
+                    <span class = "word">长尾效应</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book8.png" id = "Img1">
+                    <span class = "word">海南三人潜</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book9.png" id = "Img1">
+                    <span class = "word">医学伦理学</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book10.png" id = "Img1">
+                    <span class = "word">雪国</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book11.png" id = "Img1">
+                    <span class = "word">茶花女</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book12.png" id = "Img1">
+                    <span class = "word">徐霞客游记</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book13.png" id = "Img1">
+                    <span class = "word">红高粱</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book14.png" id = "Img1">
+                    <span class = "word">算法导论</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book15.png" id = "Img1">
+                    <span class = "word">洛阳伽蓝记</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book16.png" id = "Img1">
+                    <span class = "word">威尼斯之死</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book17.png" id = "Img1">
+                    <span class = "word">荆棘鸟</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book18.png" id = "Img1">
+                    <span class = "word">巴黎圣母院</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book19.png" id = "Img1">
+                    <span class = "word">心理学入门</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book20.png" id = "Img1">
+                    <span class = "word">精神交往论</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book21.png" id = "Img1">
+                    <span class = "word">自私的基因</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book22.png" id = "Img1">
+                    <span class = "word">统计学</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book23.png" id = "Img1">
+                    <span class = "word">邓小平文选</span>
+                </div>
+                <div class = "col-xs-3" id = "change2">
+                    <img src="img/book/book24.png" id = "Img1">
+                    <span class = "word">容忍与自由</span>
+                </div>
+                <div class = "col-xs-11" id = "Icon">
+                    <div id = "pic2">尾页</div>
+                    <div id = "pic2">下一页</div>
+                    <div id = "pic1">36</div>
+                    <div id = "pic1">35</div>
+                    <div id = "pic1">...</div>
+                    <div id = "pic1">2</div>
+                    <div id = "pic1">1</div>
+                    <div id = "pic">上一页</div>
+                    <div id = "pic">首页</div>
+                </div>
+            </div>
+        </div>
+        <div class = "container-fluid">
+            <div class = "row last-title">
+                <div class = "col-xs-12 change3">影视视频   图书音乐   版权声明   意见反馈   客服电话（010-51665380）</div>
+                <div class = "col-xs-12 change3">单位编号:1101081827　京ICP证:060172号　</div>
+                <div class = "col-xs-12 change3">Copyright © 1999-2025</div>
+            </div>
+        </div>
+        <script type = "text/javascript" src="js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>在线书籍音像阅览系统</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/index.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css">
+        <link rel = "stylesheet" type = "text/css" href = "font-awesome-4.5.0/css/font-awesome.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/one-debug.css"/>
+
+        <script type = "text/javascript" src = "js/jquery-2.0.2.min.js"></script>
+    </head>
+    <body>
+        <!--最上面的小Logo和登录/注册按钮-->
+        <div class = "container-fluid">
+            <div class = "row first-title">
+                <div class = "first-logo">
+                    <img src = "logo.png">
+                </div>
+                <a href = "register.html"><button type = "button" class = "btn1 button-register">注册</button></a>
+                <a href = "Login.html"><button type = "button" class = "btn1 button-login">登录</button></a>
+                <a href ="Before-login-Music.html"><button type = "button" class = "btn1 button-music">音乐</button></a>
+                <a href="Before-login-Video.html"><button type = "button" class = "btn1 button-movies">影视</button></a>
+                <a href = "Before-login-Book.html"><button type = "button" class = "btn1 button-books">书刊</button></a>
+                <a href = "Before-login-index.html"><button type = "button" class = "btn1 button-books">首页</button></a>
+            </div>
+        </div>
+        <div class = "container">
+            <!--轮播条和输入框-->
+            <div class = "row second-title">
+                <div id = "myCarousel" class = "carousel slide">
+                    <div class = "carousel-inner">
+                        <div class = "active item">
+                            <div class = "second-logo">
+                                <a href = "Before-login-Book.html" target = "_blank">
+                                	<img src="img/index/novel/new1.png" />
+                                </a>
+                            </div>
+                            <div class = "second-logo">
+                                <a href = "Before-login-Book.html" target = "_blank">
+                                	<img src="img/index/novel/hot1.jpg" />
+                                </a>
+                            </div>
+                            <div class = "second-logo">
+                                <a href = "Before-login-Book.html" target = "_blank">
+                                	<img src="img/index/novel/classic1.jpg" />
+                                </a>
+                            </div>
+                             <div class = "second-logo">
+                                <a href = "Before-login-Book.html" target = "_blank">
+                                	<img src="img/index/novel/VIP1.png" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <div class = "second-logo">
+                                <a href = "http://www.taobao.com" target = "_blank">
+                                	<img src="img/index/music/new1.jpg" />
+                                </a>
+                            </div>
+                            <div class = "second-logo">
+                                <a href = "http://www.taobao.com" target = "_blank">
+                                	<img src="img/index/music/hot1.jpg" />
+                                </a>
+                            </div>
+                            <div class = "second-logo">
+                                <a href = "http://www.taobao.com" target = "_blank">
+                                	<img src="img/index/music/classic1.jpg" />
+                                </a>
+                            </div>
+                             <div class = "second-logo">
+                                <a href = "http://www.taobao.com" target = "_blank">
+                                	<img src="img/index/music/VIP1.jpg" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <div class = "second-logo">
+                                <a href = "Before-login-Video.html" target = "_blank">
+                                	<img src="img/index/video/new1.jpg" />
+                                </a>
+                            </div>
+                            <div class = "second-logo">
+                                <a href = "Before-login-Video.html" target = "_blank">
+                                		<img src="img/index/video/hot1.jpg" />
+                                </a>
+                            </div>
+                            <div class = "second-logo">
+                                <a href = "Before-login-Video.html" target = "_blank">
+                                	<img src="img/index/video/classic1.jpg" />
+                                </a>
+                            </div>
+                             <div class = "second-logo">
+                                <a href = "Before-login-Video.html" target = "_blank">
+                                	<img src="img/index/video/VIP1.jpg" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "Input">
+                    <input results = "s" type="search" class="Input1" placeholder="请输入要搜索的内容"/>
+                    <a href="#1"><button type = "button" class = "btn button-search">搜索</button></a><!--btn3000-->
+                </div>
+            </div>
+
+            <!--书刊类-->
+            <div class = "total1">
+                <marquee id="broadcast" scrollamount="2" scrolldelay="50" onmouseover="this.stop()" onmouseout="this.start()" class="toprow">辰东的最新小说《完美世界》最近上架了，想要阅读的读者们千万不要错过哦！~~~</marquee>
+            </div> 
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>最新小说</b></div>
+                <a href = "Before-login-Book.html" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/new1.png">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>琅琊榜</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/new2.png">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>裂变与交互</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/new3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>位面成神</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/new4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>国际供应商</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>热门小说</b></div>
+                <a href = "Before-login-Book.html" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/hot1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>超品相师</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/hot2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>大主宰</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/hot3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>龙王传说</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/hot4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>玄界之门</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>经典小说</b></div>
+                <a href = "Before-login-Book.html" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/classic1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>三国演义</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/classic2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>水浒传</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/classic3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>西游记</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/classic4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>红楼梦</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>VIP专区</b></div>
+                <a href = "Before-login-Book.html" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/VIP1.png">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>第四校区</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/VIP2.png">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>工作等于责任</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/VIP3.png">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>名医民间秘方</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/novel/VIP4.png">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>最美中国人</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-3 change5" id = "Reading">
+                <div class = "Left-word"><b>本周人气榜</b></div>
+                <button type = "button" class = "Right-word" name = "grade1">评分</button>
+                <button type = "button" class = "Right-word1" name = "read">阅读</button>
+                <div class = "col-xs-12 change2"><!--1625-->
+                    <div class = "Left-word1"><font style = "color:#FF6600">[1] 斗破苍穹</font></div>
+                    <div class = "Right-word2">50006</div>
+                </div> 
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[2] 何以笙箫默</font></div>
+                    <div class = "Right-word2">43543</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[3] 琅琊榜</font></div>
+                    <div class = "Right-word2">43444</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[4] 盗墓笔记</div>
+                    <div class = "Right-word2">42345</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[5] 我欲封天</div>
+                    <div class = "Right-word2">42333</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[6] 云中歌</div>
+                    <div class = "Right-word2">41234</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[7] 不死不灭</div>
+                    <div class = "Right-word2">41111</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[8] 九鼎记</div>
+                    <div class = "Right-word2">40732</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[9] 天涯明月刀</div>
+                    <div class = "Right-word2">40454</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[10] 神墓</div>
+                    <div class = "Right-word2">40234</div>
+                </div>
+            </div>
+            <div class = "col-xs-3 change5" id = "Reading1">
+                <div class = "Left-word"><b>本周人气榜</b></div>
+                <button type = "button" class = "Right-word" name = "grade1">评分</button>
+                <button type = "button" class = "Right-word" name = "read">阅读</button>
+                <div class = "col-xs-12 change2"><!--1625-->
+                    <div class = "Left-word1"><font style = "color:#FF6600">[1] 完美世界</font></div>
+                    <div class = "Right-word2">47645</div>
+                </div> 
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[2] 龙族</font></div>
+                    <div class = "Right-word2">45678</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[3] 鹿鼎记</font></div>
+                    <div class = "Right-word2">44456</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[4] 看见</div>
+                    <div class = "Right-word2">42321</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[5] 拍案惊奇</div>
+                    <div class = "Right-word2">41223</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[6] 天龙八部</div>
+                    <div class = "Right-word2">40345</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[7] 骆驼祥子</div>
+                    <div class = "Right-word2">39999</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[8] 挪威的森林</div>
+                    <div class = "Right-word2">39765</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[9] 倚天屠龙记</div>
+                    <div class = "Right-word2">39444</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[10] 神墓续集</div>
+                    <div class = "Right-word2">38999</div>
+                </div>
+            </div>
+            <!--广告君-->
+            <div class = "col-xs-3 change6" id = "adv-book">
+                <div class = "Line1">X</div>
+                <img src = "saber3.jpg">
+            </div>
+
+            <!--电影类-->
+            <div class = "total">
+                <marquee id="broadcast" scrollamount="2" scrolldelay="50" onmouseover="this.stop()" onmouseout="this.start()" class="toprow">各位电影迷、电视剧迷们，《大唐玄奘》、《欢乐颂》等影视重磅来袭，你准备好了吗？</marquee>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>最新影视</b></div>
+                <a href = "Before-login-Video.html" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/new1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>盗墓笔记</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/new2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>寻龙诀</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/new3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>英雄</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/new4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>捉妖记</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>热门影视</b></div>
+                <a href = "Before-login-Video.html" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/hot1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>欢乐颂</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/hot2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>琅琊榜</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/hot3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>美国队长3</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/hot4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>云中歌</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>经典影视</b></div>
+                <a href = "Before-login-Video.html" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/classic1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>百鸟朝凤</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/classic2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>大唐玄奘</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/classic3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>美人鱼</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/classic4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>七号少年</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>VIP专区</b></div>
+                <a href = "Before-login-Video.html" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/VIP1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>超神学院之黑甲</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/VIP2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>疯狂动物城</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/VIP3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>功夫熊猫</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/video/VIP4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>海贼王</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-3 change5" id = "Watching">
+                <div class = "Left-word"><b>本周人气榜</b></div>
+                <button type = "button" class = "Right-word" name = "grade2">评分</button>
+                <button type = "button" class = "Right-word1" name = "watch">观看</button>
+                <div class = "col-xs-12 change2"><!--1625-->
+                    <div class = "Left-word1"><font style = "color:#FF6600">[1] 欢乐颂</font></div>
+                    <div class = "Right-word2">50006</div>
+                </div> 
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[2] 寻龙诀</font></div>
+                    <div class = "Right-word2">43543</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[3] 美人鱼</font></div>
+                    <div class = "Right-word2">43444</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[4] 盗墓笔记</div>
+                    <div class = "Right-word2">42345</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[5] 琅琊榜</div>
+                    <div class = "Right-word2">42333</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[6] 云中歌</div>
+                    <div class = "Right-word2">41234</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[7] 捉妖记</div>
+                    <div class = "Right-word2">41111</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[8] 疯狂动物城</div>
+                    <div class = "Right-word2">40732</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[9] 侏罗纪世界</div>
+                    <div class = "Right-word2">40454</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[10] 英雄</div>
+                    <div class = "Right-word2">40234</div>
+                </div>  
+            </div>
+            <div class = "col-xs-3 change5" id = "Watching1">
+                <div class = "Left-word"><b>本周人气榜</b></div>
+                <button type = "button" class = "Right-word" name = "grade2">评分</button>
+                <button type = "button" class = "Right-word" name = "watch">观看</button>
+                <div class = "col-xs-12 change2"><!--1625-->
+                    <div class = "Left-word1"><font style = "color:#FF6600">[1] 速度与激情7</font></div>
+                    <div class = "Right-word2">86543</div>
+                </div> 
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[2] 行尸走肉</font></div>
+                    <div class = "Right-word2">76555</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[3] 太阳的后裔</font></div>
+                    <div class = "Right-word2">73224</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[4] 太子妃升职记</div>
+                    <div class = "Right-word2">65434</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[5] 生化危机</div>
+                    <div class = "Right-word2">64123</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[6] 饥饿游戏</div>
+                    <div class = "Right-word2">55555</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[7] 神盾局特工第三季</div>
+                    <div class = "Right-word2">47534</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[8] 僵尸世界大战</div>
+                    <div class = "Right-word2">42098</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[9] 老友记</div>
+                    <div class = "Right-word2">39876</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[10] 星球大战:原力觉醒</div>
+                    <div class = "Right-word2">36789</div>
+                </div>  
+            </div>
+            <!--广告君-->
+            <div class = "col-xs-3 change6" id = "adv-video">
+                <div class = "Line2">X</div>
+                <img src = "saber3.jpg">
+            </div>
+
+            <!--音乐类-->
+            <div class = "total">
+                <marquee id="broadcast" scrollamount="2" scrolldelay="50" onmouseover="this.stop()" onmouseout="this.start()" class="toprow">音乐库有部分更新，大家想要欣赏新音乐的可以来看看，不要错过哦~~~</marquee>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>最新音乐</b></div>
+                <a href = "http://www.taobao.com" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/new1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>南山南</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/new2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>泡沫</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/new3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>十年</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/new4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>时间煮雨</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>热门音乐</b></div>
+                <a href = "http://www.taobao.com" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/hot1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>光辉岁月</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/hot2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>素颜</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/hot3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>亲情式爱情</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/hot4.png">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>上邪</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>经典音乐</b></div>
+                <a href = "http://www.taobao.com" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/classic1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>summer</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/classic2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>冰雨</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/classic3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>浮夸</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/classic4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>命运交响曲</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-9 change">
+                <div class = "Left-word"><b>VIP专区</b></div>
+                <a href = "http://www.taobao.com" target = "_blank"><div class = "Right-word"><u>[more]</u></div></a>
+            </div>
+            <div class = "col-xs-9 change3">
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/VIP1.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>故梦</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/VIP2.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>奇妙能力歌</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/VIP3.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>牵丝戏</b></font></span>
+                </div>
+                <div class = "col-xs-3 change4">
+                    <div class = "IMG">
+                        <img src = "img/index/music/VIP4.jpg">
+                        <div class = "glyphicon glyphicon-star-empty" id = "star"></div>
+                    </div>
+                    <span><font id = "Word"><b>倾尽天下</b></font></span>
+                </div>
+            </div>
+            <div class = "col-xs-3 change5" id = "Playing">
+                <div class = "Left-word"><b>本周人气榜</b></div>
+                <button type = "button" class = "Right-word" name = "grade3">评分</button>
+                <button type = "button" class = "Right-word1" name = "play">播放</button>
+                <div class = "col-xs-12 change2"><!--1625-->
+                    <div class = "Left-word1"><font style = "color:#FF6600">[1] 命运交响曲</font></div>
+                    <div class = "Right-word2">50006</div>
+                </div> 
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[2] 剑心</font></div>
+                    <div class = "Right-word2">43543</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[3] 时间煮雨</font></div>
+                    <div class = "Right-word2">43444</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[4] 南山南</div>
+                    <div class = "Right-word2">42345</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[5] 光辉岁月</div>
+                    <div class = "Right-word2">42333</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[6] 千千阙歌</div>
+                    <div class = "Right-word2">41234</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[7] 浮夸</div>
+                    <div class = "Right-word2">41111</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[8] Sunshine in the rain</div>
+                    <div class = "Right-word2">40732</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[9] 冰雨</div>
+                    <div class = "Right-word2">40454</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[10] 天使的翅膀</div>
+                    <div class = "Right-word2">40234</div>
+                </div>
+            </div>
+            <div class = "col-xs-3 change5" id = "Playing1">
+                <div class = "Left-word"><b>本周人气榜</b></div>
+                <button type = "button" class = "Right-word" name = "grade3">评分</button>
+                <button type = "button" class = "Right-word" name = "play">播放</button>
+                <div class = "col-xs-12 change2"><!--1625-->
+                    <div class = "Left-word1"><font style = "color:#FF6600">[1] 时间煮雨</font></div>
+                    <div class = "Right-word2">64712</div>
+                </div> 
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[2] 红颜旧</font></div>
+                    <div class = "Right-word2">62111</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1"><font style = "color:#FF6600">[3] 相思</font></div>
+                    <div class = "Right-word2">61273</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[4] 愿得一人心</div>
+                    <div class = "Right-word2">58976</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[5] 清明雨上</div>
+                    <div class = "Right-word2">57664</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[6] 胭脂泪</div>
+                    <div class = "Right-word2">53211</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[7] 咱们结婚吧</div>
+                    <div class = "Right-word2">51987</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[8] 海阔天空(Beyond)</div>
+                    <div class = "Right-word2">48765</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[9] Memoria</div>
+                    <div class = "Right-word2">46534</div>
+                </div>
+                <div class = "col-xs-12 change2">
+                    <div class = "Left-word1">[10] 爱的供养</div>
+                    <div class = "Right-word2">42134</div>
+                </div>
+            </div>
+            <!--广告君-->
+            <div class = "col-xs-3 change6" id = "adv-music">
+                <div class = "Line3">X</div>
+                <img src = "saber3.jpg">
+            </div>
+        </div>
+        <div class = "container-fluid">
+            <div class = "row last-title">
+                <div class = "col-xs-12 change7">影视视频   图书音乐   版权声明   意见反馈   客服电话（010-51665380）</div>
+                <div class = "col-xs-12 change7">单位编号:1101081827　京ICP证:060172号　</div>
+                <div class = "col-xs-12 change7">Copyright © 1999-2025</div>
+            </div>
+        </div>
+        <script type = "text/javascript" src="js/bootstrap.js"></script>
+        <script type = "text/javascript" src = "js/index.js"></script>
+    </body>
+</html>

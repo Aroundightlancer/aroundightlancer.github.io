@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+#login-form {
+	width: 800px;
+	height: 300px;
+	margin: 50px auto;
+	font-size: 14px;
+}
+.login-form {
+	width: 800px;
+}
+.login-title {
+	width: 800px;
+}
+.login-h2 {
+	padding-left: 70px;
+	font-size: 40px;
+	font-weight: bold;
+}
+.acount-name,.passport-name {
+	width: 150px;
+	height:　30px;
+	padding-bottom: 5px;
+}
+.acount-input,.passport-input {
+	padding: 10px 0;　
+}
+.name {
+	float: right;
+}
+.input {
+	width:350px;
+	height: 40px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+.blue {
+	color: #2ca4de;
+}
+a:link {
+	color: #2ca4de;
+	text-decoration: none;
+}
+.login-tr3 {
+	width: 350px;
+	padding: 10px 0;
+}
+.right {
+	float: right;
+}
+.button {
+	width: 350px;
+	height: 40px;
+	margin: 10px auto;
+	border: none;
+	border-radius: 5px;
+	background-color: #690;
+	color: #FFF;
+	font-size: 18px;
+}
